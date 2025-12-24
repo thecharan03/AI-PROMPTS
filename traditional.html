@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Traditional AI Prompts - Copy real Gemini-style AI prompts for traditional art styles.">
+  <title>Traditional Prompts - AI Prompts</title>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Inter',sans-serif;background:#f9f9f9;color:#333;}
+    a{text-decoration:none;color:#333;}
+    header{background:#fff;padding:20px 0;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+    nav{width:90%;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+    nav h1{font-size:24px;font-weight:bold;}
+    nav ul{list-style:none;display:flex;gap:20px;}
+    nav ul li{position:relative;}
+    nav ul li ul.dropdown{display:none;position:absolute;top:100%;left:0;background:#fff;padding:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+    nav ul li:hover ul.dropdown{display:block;}
+    nav ul li ul.dropdown li{padding:5px 20px;}
+    nav ul li ul.dropdown li a:hover{color:#0077ff;}
+    main{width:90%;max-width:1200px;margin:40px auto;}
+    section{margin-bottom:60px;}
+    section h1{font-size:32px;margin-bottom:10px;}
+    section h2{font-size:22px;margin-bottom:15px;color:#0077ff;}
+    .prompt-card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.05);margin-bottom:20px;}
+    .prompt-card img{width:100%;border-radius:10px;margin-bottom:10px;}
+    .prompt-card h3{margin-bottom:10px;font-size:20px;}
+    .prompt-card pre{
+      background:#f5f7fa;
+      padding:15px;
+      border-radius:8px;
+      font-size:16px;
+      line-height:1.6;
+      white-space:pre-wrap;
+      word-wrap:break-word;
+      overflow-x:auto;
+      max-height:400px;
+    }
+    .prompt-card p{margin-top:10px;}
+    .copy-btn, .toggle-btn{
+      margin-top:5px;padding:5px 10px;background:#0077ff;color:#fff;border:none;border-radius:5px;cursor:pointer;
+    }
+    .copy-btn:hover, .toggle-btn:hover{background:#005ccc;}
+    footer{background:#fff;padding:20px 0;text-align:center;box-shadow:0 -2px 5px rgba(0,0,0,0.1);}
+    @media(max-width:768px){nav ul{flex-direction:column;gap:10px;}}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h1>AI Prompts</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Categories ▼</a>
+        <ul class="dropdown">
+          <li><a href="trending.html">Trending</a></li>
+          <li><a href="business.html">Business</a></li>
+          <li><a href="traditional.html">Traditional</a></li>
+          <li><a href="portrait.html">Portraits</a></li>
+          <li><a href="ghibli.html">Ghibli</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section id="traditional">
+
+<h1>Traditional AI Prompts</h1>
+<h2>Classic and Timeless Art Styles</h2>
+<p>
+These traditional AI prompts focus on classic art styles like oil painting, watercolor, ink drawing, and pencil sketches. Perfect for creating timeless visuals using AI tools.
+</p>
+
+<!-- START PROMPTS -->
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Oil Painting Landscape">
+  <h3>Oil Painting Landscape</h3>
+  <pre id="trad1">Beautiful oil painting of a countryside landscape, realistic textures, warm lighting, classic impressionist style, brush stroke detail, natural scenery</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad1')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad1')">Expand / Collapse</button>
+  <p>Generates traditional oil painting landscapes. Ideal for classic art projects.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Watercolor Portrait">
+  <h3>Watercolor Portrait</h3>
+  <pre id="trad2">Soft watercolor portrait of a young adult, expressive facial features, realistic shading, gentle colors, traditional painting techniques, high detail</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad2')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad2')">Expand / Collapse</button>
+  <p>Generates soft and expressive watercolor portraits.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Charcoal Drawing">
+  <h3>Charcoal Drawing</h3>
+  <pre id="trad3">Detailed charcoal sketch of a historical building, realistic shading, perspective accuracy, dramatic shadows, traditional sketching techniques, high-resolution textures</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad3')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad3')">Expand / Collapse</button>
+  <p>Generates realistic charcoal sketches. Perfect for classical art practice.</p>
+</div>
+
+<!-- Add prompts trad4 - trad20 in the same style -->
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Ink Illustration">
+  <h3>Ink Illustration</h3>
+  <pre id="trad4">Intricate black ink illustration of a forest scene, line art style, fine details, traditional pen techniques, realistic textures, highly detailed composition</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad4')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad4')">Expand / Collapse</button>
+  <p>Generates detailed ink illustrations. Great for comics or traditional style art.</p>
+</div>
+
+<!-- ... continue trad5 to trad20 similar blocks ... -->
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Oil Painting Landscape">
+  <h3>Oil Painting Landscape</h3>
+  <pre id="trad1">Beautiful oil painting of a countryside landscape, realistic textures, warm lighting, classic impressionist style, brush stroke detail, natural scenery</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad1')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad1')">Expand / Collapse</button>
+  <p>Generates traditional oil painting landscapes. Ideal for classic art projects.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Watercolor Portrait">
+  <h3>Watercolor Portrait</h3>
+  <pre id="trad2">Soft watercolor portrait of a young adult, expressive facial features, realistic shading, gentle colors, traditional painting techniques, high detail</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad2')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad2')">Expand / Collapse</button>
+  <p>Generates soft and expressive watercolor portraits.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Charcoal Drawing">
+  <h3>Charcoal Drawing</h3>
+  <pre id="trad3">Detailed charcoal sketch of a historical building, realistic shading, perspective accuracy, dramatic shadows, traditional sketching techniques, high-resolution textures</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad3')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad3')">Expand / Collapse</button>
+  <p>Generates realistic charcoal sketches. Perfect for classical art practice.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Ink Illustration">
+  <h3>Ink Illustration</h3>
+  <pre id="trad4">Intricate black ink illustration of a forest scene, line art style, fine details, traditional pen techniques, realistic textures, highly detailed composition</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad4')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad4')">Expand / Collapse</button>
+  <p>Generates detailed ink illustrations. Great for comics or traditional style art.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Pastel Drawing">
+  <h3>Pastel Drawing</h3>
+  <pre id="trad5">Vibrant pastel drawing of flowers in a garden, soft texture, blended colors, traditional art style, high detail, realistic shadows and highlights</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad5')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad5')">Expand / Collapse</button>
+  <p>Generates colorful pastel art. Ideal for floral or soft-themed illustrations.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Classical Portrait">
+  <h3>Classical Portrait</h3>
+  <pre id="trad6">Classical portrait in 18th century oil painting style, elegant pose, detailed textures, soft lighting, realistic skin tone, traditional art composition</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad6')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad6')">Expand / Collapse</button>
+  <p>Generates elegant traditional portraits. Great for historical or classical art projects.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Ink Wash Painting">
+  <h3>Ink Wash Painting</h3>
+  <pre id="trad7">Traditional ink wash painting of mountains and rivers, flowing brush strokes, subtle textures, soft gradients, classical Eastern art style, high-resolution</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad7')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad7')">Expand / Collapse</button>
+  <p>Generates elegant ink wash landscapes. Perfect for Asian traditional art inspiration.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Graphite Sketch">
+  <h3>Graphite Sketch</h3>
+  <pre id="trad8">Detailed graphite pencil sketch of an old city street, realistic shading, precise perspective, textured surfaces, traditional sketch techniques, high-resolution drawing</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad8')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad8')">Expand / Collapse</button>
+  <p>Generates precise graphite sketches. Great for urban or architectural drawings.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Etching Art">
+  <h3>Etching Art</h3>
+  <pre id="trad9">Intricate etching art of a fantasy castle, detailed line work, shading with hatching, traditional printmaking style, highly detailed composition</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad9')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad9')">Expand / Collapse</button>
+  <p>Generates traditional etching-style art. Perfect for detailed prints.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Sumi-e Painting">
+  <h3>Sumi-e Painting</h3>
+  <pre id="trad10">Japanese Sumi-e painting of bamboo forest, minimalistic ink strokes, traditional style, flowing lines, subtle textures, zen-inspired composition</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad10')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad10')">Expand / Collapse</button>
+  <p>Generates minimalistic Sumi-e paintings. Ideal for traditional Japanese style art.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Renaissance Portrait">
+  <h3>Renaissance Portrait</h3>
+  <pre id="trad11">Renaissance-style oil portrait of a noble person, soft lighting, realistic textures, classic composition, elegant pose, detailed costume</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad11')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad11')">Expand / Collapse</button>
+  <p>Generates classical Renaissance portraits. Perfect for historical or museum-style art.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Fresco Painting">
+  <h3>Fresco Painting</h3>
+  <pre id="trad12">Traditional fresco-style wall painting, mythological theme, vivid colors, historical textures, classical composition, high detail</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad12')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad12')">Expand / Collapse</button>
+  <p>Generates fresco-style traditional art. Great for historical or classical themes.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Traditional Still Life">
+  <h3>Traditional Still Life</h3>
+  <pre id="trad13">Still life composition of fruits and vase, oil painting style, realistic textures, soft natural lighting, classical art techniques</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad13')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad13')">Expand / Collapse</button>
+  <p>Generates classical still life paintings. Ideal for art students and projects.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Traditional Landscape Drawing">
+  <h3>Traditional Landscape Drawing</h3>
+  <pre id="trad14">Pencil landscape drawing of mountains and rivers, realistic textures, shading, depth perspective, traditional style, high-resolution</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad14')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad14')">Expand / Collapse</button>
+  <p>Generates classic landscape drawings. Perfect for traditional art studies.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Baroque Painting">
+  <h3>Baroque Painting</h3>
+  <pre id="trad15">Baroque-style painting of a dramatic scene, rich textures, deep shadows, realistic light and color, classic composition, highly detailed</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad15')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad15')">Expand / Collapse</button>
+  <p>Generates dramatic Baroque paintings. Perfect for historical art projects.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Classical Architecture Drawing">
+  <h3>Classical Architecture Drawing</h3>
+  <pre id="trad16">Detailed pencil sketch of classical architecture, perspective accuracy, column details, ornate textures, traditional drawing techniques</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad16')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad16')">Expand / Collapse</button>
+  <p>Generates architectural drawings. Great for traditional design and studies.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Medieval Manuscript Illustration">
+  <h3>Medieval Manuscript Illustration</h3>
+  <pre id="trad17">Medieval manuscript illustration, illuminated letters, rich colors, gold highlights, traditional art techniques, high detail</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad17')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad17')">Expand / Collapse</button>
+  <p>Generates medieval manuscript art. Perfect for historical projects.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Traditional Floral Painting">
+  <h3>Traditional Floral Painting</h3>
+  <pre id="trad18">Classical painting of flowers in vase, oil painting style, soft lighting, detailed textures, traditional art techniques, realistic colors</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad18')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad18')">Expand / Collapse</button>
+  <p>Generates realistic traditional floral paintings. Great for classical art projects.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Traditional Figure Drawing">
+  <h3>Traditional Figure Drawing</h3>
+  <pre id="trad19">Pencil figure drawing of a human model, realistic anatomy, shading, pose accuracy, classical drawing techniques, high resolution</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad19')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad19')">Expand / Collapse</button>
+  <p>Generates accurate human figure drawings. Perfect for art practice.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Classical Mythology Painting">
+  <h3>Classical Mythology Painting</h3>
+  <pre id="trad20">Painting depicting a classical mythology scene, detailed characters, rich textures, traditional oil painting style, realistic lighting, epic composition</pre>
+  <button class="copy-btn" onclick="copyPrompt('trad20')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('trad20')">Expand / Collapse</button>
+  <p>Generates classical mythology paintings. Perfect for epic traditional art.</p>
+</div>
+
+</section>
+</main>
+
+<footer>
+  <a href="privacy.html" style="color:#000;">Privacy Policy</a>
+  <p>&copy; 2025 AI Prompts. All Rights Reserved.</p>
+</footer>
+
+<script>
+function copyPrompt(id){
+  const promptText = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(promptText)
+    .then(()=>{alert('Prompt copied!');});
+}
+
+function togglePrompt(id){
+  const pre = document.getElementById(id);
+  if(pre.style.maxHeight && pre.style.maxHeight != "none"){
+    pre.style.maxHeight = "400px";
+  } else {
+    pre.style.maxHeight = "none";
+  }
+}
+</script>
+
+</body>
+</html>

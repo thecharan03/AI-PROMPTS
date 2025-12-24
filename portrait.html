@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portrait AI Prompts - Copy real Gemini-style AI prompts to generate stunning portraits.">
+  <title>Portrait Prompts - AI Prompts</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Inter',sans-serif;background:#f9f9f9;color:#333;}
+    a{text-decoration:none;color:#333;}
+    header{background:#fff;padding:20px 0;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+    nav{width:90%;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+    nav h1{font-size:24px;font-weight:bold;}
+    nav ul{list-style:none;display:flex;gap:20px;}
+    nav ul li{position:relative;}
+    nav ul li ul.dropdown{display:none;position:absolute;top:100%;left:0;background:#fff;padding:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+    nav ul li:hover ul.dropdown{display:block;}
+    nav ul li ul.dropdown li{padding:5px 20px;}
+    nav ul li ul.dropdown li a:hover{color:#0077ff;}
+    main{width:90%;max-width:1200px;margin:40px auto;}
+    section{margin-bottom:60px;}
+    section h1{font-size:32px;margin-bottom:10px;}
+    section h2{font-size:22px;margin-bottom:15px;color:#0077ff;}
+    .prompt-card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.05);margin-bottom:20px;}
+    .prompt-card img{width:100%;border-radius:10px;margin-bottom:10px;}
+    .prompt-card h3{margin-bottom:10px;font-size:20px;}
+    .prompt-card pre{
+      background:#f5f7fa;
+      padding:15px;
+      border-radius:8px;
+      font-size:16px;
+      line-height:1.6;
+      white-space:pre-wrap;
+      word-wrap:break-word;
+      overflow-x:auto;
+      max-height:400px;
+    }
+    .prompt-card p{margin-top:10px;}
+    .copy-btn, .toggle-btn{
+      margin-top:5px;padding:5px 10px;background:#0077ff;color:#fff;border:none;border-radius:5px;cursor:pointer;
+    }
+    .copy-btn:hover, .toggle-btn:hover{background:#005ccc;}
+    footer{background:#fff;padding:20px 0;text-align:center;box-shadow:0 -2px 5px rgba(0,0,0,0.1);}
+    @media(max-width:768px){nav ul{flex-direction:column;gap:10px;}}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>AI Prompts</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Categories ▼</a>
+        <ul class="dropdown">
+          <li><a href="trending.html">Trending</a></li>
+          <li><a href="business.html">Business</a></li>
+          <li><a href="traditional.html">Traditional</a></li>
+          <li><a href="portrait.html">Portraits</a></li>
+          <li><a href="ghibli.html">Ghibli</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section id="portrait">
+
+<h1>Portrait AI Prompts</h1>
+<h2>Realistic and Artistic Portrait Styles</h2>
+<p>
+These portrait AI prompts focus on creating expressive, realistic, and artistic human portraits using AI tools. Ideal for avatars, concept art, and personal projects.
+</p>
+
+<!-- START 20 PORTRAIT PROMPTS -->
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Ultra-Realistic Portrait">
+  <h3>Ultra-Realistic Portrait</h3>
+  <pre id="portrait1">Ultra-detailed realistic portrait of a young adult, soft lighting, expressive facial features, high-resolution skin textures, professional photography style</pre>
+  <button class="copy-btn" onclick="copyPrompt('portrait1')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('portrait1')">Expand / Collapse</button>
+  <p>Generates lifelike portraits with professional lighting and detail.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Cinematic Portrait">
+  <h3>Cinematic Portrait</h3>
+  <pre id="portrait2">Cinematic portrait of a middle-aged man, dramatic lighting, high detail, shallow depth of field, realistic textures, expressive mood</pre>
+  <button class="copy-btn" onclick="copyPrompt('portrait2')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('portrait2')">Expand / Collapse</button>
+  <p>Generates cinematic style portrait with dramatic lighting.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Fantasy Character Portrait">
+  <h3>Fantasy Character Portrait</h3>
+  <pre id="portrait3">Fantasy-style portrait of a warrior woman, glowing eyes, armor details, mystical lighting, ultra-detailed, concept art style</pre>
+  <button class="copy-btn" onclick="copyPrompt('portrait3')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('portrait3')">Expand / Collapse</button>
+  <p>Generates fantasy portraits with mystical and heroic details.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Watercolor Portrait">
+  <h3>Watercolor Portrait</h3>
+  <pre id="portrait4">Soft watercolor portrait of a young girl, pastel tones, realistic facial expression, traditional painting style, detailed brush strokes</pre>
+  <button class="copy-btn" onclick="copyPrompt('portrait4')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('portrait4')">Expand / Collapse</button>
+  <p>Generates soft and artistic watercolor portraits.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Charcoal Portrait">
+  <h3>Charcoal Portrait</h3>
+  <pre id="portrait5">Charcoal pencil portrait of an elderly man, strong shadows, detailed textures, realistic facial wrinkles, traditional art style</pre>
+  <button class="copy-btn" onclick="copyPrompt('portrait5')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('portrait5')">Expand / Collapse</button>
+  <p>Generates expressive charcoal-style portraits with realistic shading.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Digital Painting Portrait">
+  <h3>Digital Painting Portrait</h3>
+  <pre id="portrait6">Digital painting of a young adult, soft lighting, expressive eyes, high-resolution textures, professional character design style</pre>
+  <button class="copy-btn" onclick="copyPrompt('portrait6')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('portrait6')">Expand / Collapse</button>
+  <p>Generates modern digital painting portraits for concept art.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Cinematic Female Portrait">
+  <h3>Cinematic Female Portrait</h3>
+  <pre id="portrait7">Cinematic portrait of a young woman, dramatic shadows, soft lighting, professional photography look, ultra-detailed textures</pre>
+  <button class="copy-btn" onclick="copyPrompt('portrait7')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('portrait7')">Expand / Collapse</button>
+  <p>Generates dramatic and cinematic female portraits.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Fantasy Elf Portrait">
+  <h3>Fantasy Elf Portrait</h3>
+  <pre id="portrait8">Elven character portrait, pointed ears, magical glow, fantasy lighting, ultra-detailed, mystical concept art style</pre>
+  <button class="copy-btn" onclick="copyPrompt('portrait8')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('portrait8')">Expand / Collapse</button>
+  <p>Generates magical fantasy elf portraits with intricate details.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Steampunk Portrait">
+  <h3>Steampunk Portrait</h3>
+  <pre id="portrait9">Steampunk style portrait of a woman, goggles, gears, mechanical accessories, detailed textures, dramatic lighting, realistic rendering</pre>
+  <button class="copy-btn" onclick="copyPrompt('portrait9')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('portrait9')">Expand / Collapse</button>
+  <p>Generates stylish steampunk character portraits.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Vintage Portrait">
+  <h3>Vintage Portrait</h3>
+  <pre id="portrait10">Vintage-style portrait of a young man, 1920s theme, soft warm tones, classic photography style, realistic textures</pre>
+  <button class="copy-btn" onclick="copyPrompt('portrait10')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('portrait10')">Expand / Collapse</button>
+  <p>Generates classic vintage portrait styles.</p>
+</div>
+
+<!-- Add portrait11 - portrait20 with similar structure -->
+
+</section>
+</main>
+
+<footer>
+  <a href="privacy.html" style="color:#000;">Privacy Policy</a>
+  <p>&copy; 2025 AI Prompts. All Rights Reserved.</p>
+</footer>
+
+<script>
+function copyPrompt(id){
+  const promptText = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(promptText)
+    .then(()=>{alert('Prompt copied!');});
+}
+
+function togglePrompt(id){
+  const pre = document.getElementById(id);
+  if(pre.style.maxHeight && pre.style.maxHeight != "none"){
+    pre.style.maxHeight = "400px";
+  } else {
+    pre.style.maxHeight = "none";
+  }
+}
+</script>
+
+</body>
+</html>

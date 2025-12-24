@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Business AI Prompts - Professional Gemini-style AI prompts for branding, marketing and ads.">
+  <title>Business Prompts - AI Prompts</title>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Inter',sans-serif;background:#f9f9f9;color:#333;}
+    a{text-decoration:none;color:#333;}
+    header{background:#fff;padding:20px 0;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+    nav{width:90%;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+    nav h1{font-size:24px;font-weight:bold;}
+    nav ul{list-style:none;display:flex;gap:20px;}
+    nav ul li{position:relative;}
+    nav ul li ul.dropdown{display:none;position:absolute;top:100%;left:0;background:#fff;padding:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+    nav ul li:hover ul.dropdown{display:block;}
+    nav ul li ul.dropdown li{padding:5px 20px;}
+    nav ul li ul.dropdown li a:hover{color:#0077ff;}
+    main{width:90%;max-width:1200px;margin:40px auto;}
+    section{margin-bottom:60px;}
+    section h1{font-size:32px;margin-bottom:10px;}
+    section h2{font-size:22px;margin-bottom:15px;color:#0077ff;}
+    .prompt-card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.05);margin-bottom:20px;}
+    .prompt-card img{width:100%;border-radius:10px;margin-bottom:10px;}
+    .prompt-card h3{margin-bottom:10px;font-size:20px;}
+    .prompt-card pre{
+      background:#f5f7fa;
+      padding:15px;
+      border-radius:8px;
+      font-size:16px;
+      line-height:1.6;
+      white-space:pre-wrap;
+      word-wrap:break-word;
+      overflow-x:auto;
+      max-height:400px;
+    }
+    .prompt-card p{margin-top:10px;}
+    .copy-btn, .toggle-btn{
+      margin-top:5px;padding:5px 10px;background:#0077ff;color:#fff;border:none;border-radius:5px;cursor:pointer;
+    }
+    .copy-btn:hover, .toggle-btn:hover{background:#005ccc;}
+    footer{background:#fff;padding:20px 0;text-align:center;box-shadow:0 -2px 5px rgba(0,0,0,0.1);}
+    @media(max-width:768px){nav ul{flex-direction:column;gap:10px;}}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h1>AI Prompts</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Categories ▼</a>
+        <ul class="dropdown">
+          <li><a href="trending.html">Trending</a></li>
+          <li><a href="business.html">Business</a></li>
+          <li><a href="traditional.html">Traditional</a></li>
+          <li><a href="portrait.html">Portraits</a></li>
+          <li><a href="ghibli.html">Ghibli</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section id="business">
+
+<h1>Business AI Prompts</h1>
+<h2>Professional AI Image Prompts for Marketing</h2>
+<p>
+These business AI prompts help users create professional branding, marketing,
+and advertising visuals using AI image generation tools.
+</p>
+
+<!-- START PROMPTS -->
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Startup branding AI prompt">
+  <h3>Startup Branding Visual</h3>
+  <pre id="b1">Modern startup branding image, clean layout, minimal colors, professional lighting, corporate look, clear typography, modern style, creative variations, adaptable for social media and website banners, multiple angles and perspectives included</pre>
+  <button class="copy-btn" onclick="copyPrompt('b1')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b1')">Expand / Collapse</button>
+  <p>Perfect for startup websites, pitch decks, and brand identity visuals.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Product advertisement AI prompt">
+  <h3>Product Advertisement</h3>
+  <pre id="b2">High-quality product advertisement, studio lighting, clean background, commercial photography style, multiple angles, vibrant colors, realistic reflections, professional marketing layout, optimized for social media and print</pre>
+  <button class="copy-btn" onclick="copyPrompt('b2')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b2')">Expand / Collapse</button>
+  <p>Ideal for e-commerce, ads, and promotional banners.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Corporate team portrait AI prompt">
+  <h3>Corporate Team Portrait</h3>
+  <pre id="b3">Professional corporate team portrait, office environment, confident expressions, soft lighting, modern workspace, dynamic poses, inclusive representation, realistic textures, optimized for company websites, brochures, and LinkedIn profiles</pre>
+  <button class="copy-btn" onclick="copyPrompt('b3')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b3')">Expand / Collapse</button>
+  <p>Great for company websites and LinkedIn branding.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Marketing banner AI prompt">
+  <h3>Marketing Banner Design</h3>
+  <pre id="b4">Digital marketing banner, bold typography, high contrast colors, professional business design, adaptable sizes, modern layout, attention-grabbing composition, subtle shadows and lighting effects, versatile for Instagram, Facebook, or website headers</pre>
+  <button class="copy-btn" onclick="copyPrompt('b4')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b4')">Expand / Collapse</button>
+  <p>Best for social media ads and landing pages.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Business presentation AI prompt">
+  <h3>Business Presentation Slide</h3>
+  <pre id="b5">Corporate presentation slide, modern layout, clean UI, professional color palette, multiple layouts included, suitable for client pitches, modern business visuals, editable templates</pre>
+  <button class="copy-btn" onclick="copyPrompt('b5')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b5')">Expand / Collapse</button>
+  <p>Use for pitch decks and professional presentations.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Modern office AI prompt">
+  <h3>Modern Office Workspace</h3>
+  <pre id="b6">Modern office workspace interior, minimal design, natural lighting, professional environment, collaborative desks, indoor plants, modern furniture, corporate vibe</pre>
+  <button class="copy-btn" onclick="copyPrompt('b6')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b6')">Expand / Collapse</button>
+  <p>Great for corporate visuals and blog illustrations.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="CEO portrait AI prompt">
+  <h3>CEO Portrait</h3>
+  <pre id="b7">Professional CEO portrait, confident posture, corporate background, studio lighting, modern suit, realistic facial expressions, soft shadows</pre>
+  <button class="copy-btn" onclick="copyPrompt('b7')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b7')">Expand / Collapse</button>
+  <p>Perfect for leadership profile pages or corporate press releases.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Social media business AI prompt">
+  <h3>Social Media Business Ad</h3>
+  <pre id="b8">Professional social media advertisement image, strong call to action, clean business branding, colorful visuals, attention-grabbing, optimized for multiple social platforms</pre>
+  <button class="copy-btn" onclick="copyPrompt('b8')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b8')">Expand / Collapse</button>
+  <p>Great for Instagram, LinkedIn, and Facebook campaigns.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Business infographic AI prompt">
+  <h3>Business Infographic</h3>
+  <pre id="b9">Modern business infographic, clear typography, data visualization charts, icons, professional color scheme, suitable for presentations and reports</pre>
+  <button class="copy-btn" onclick="copyPrompt('b9')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b9')">Expand / Collapse</button>
+  <p>Perfect for explaining data in reports or presentations.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Brand strategy illustration AI prompt">
+  <h3>Brand Strategy Illustration</h3>
+  <pre id="b10">Visual illustration for brand strategy, creative icons, modern design, cohesive color palette, professional layout, suitable for marketing strategy presentations</pre>
+  <button class="copy-btn" onclick="copyPrompt('b10')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b10')">Expand / Collapse</button>
+  <p>Great for explaining brand planning visually.</p>
+</div>
+
+<!-- PROMPTS 11-20 -->
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Product launch poster AI prompt">
+  <h3>Product Launch Poster</h3>
+  <pre id="b11">Eye-catching product launch poster, modern typography, bold colors, promotional design, suitable for print and social media, professional composition, creative layout</pre>
+  <button class="copy-btn" onclick="copyPrompt('b11')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b11')">Expand / Collapse</button>
+  <p>Great for launching new products and marketing campaigns.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Corporate email header AI prompt">
+  <h3>Corporate Email Header</h3>
+  <pre id="b12">Clean corporate email header image, professional branding, modern typography, attention to visual hierarchy, suitable for newsletters and email campaigns</pre>
+  <button class="copy-btn" onclick="copyPrompt('b12')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b12')">Expand / Collapse</button>
+  <p>Perfect for professional email campaigns and newsletters.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Business event banner AI prompt">
+  <h3>Business Event Banner</h3>
+  <pre id="b13">Professional event banner for conferences, workshops, or seminars, modern typography, branding elements, attention-grabbing, suitable for print and digital use</pre>
+  <button class="copy-btn" onclick="copyPrompt('b13')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b13')">Expand / Collapse</button>
+  <p>Great for corporate events and promotional purposes.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Financial report cover AI prompt">
+  <h3>Financial Report Cover</h3>
+  <pre id="b14">Professional financial report cover design, modern typography, clean layout, corporate branding, suitable for annual reports and presentations</pre>
+  <button class="copy-btn" onclick="copyPrompt('b14')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b14')">Expand / Collapse</button>
+  <p>Perfect for official company reports and investor presentations.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Corporate social media post AI prompt">
+  <h3>Corporate Social Media Post</h3>
+  <pre id="b15">Modern corporate social media post, branded visuals, minimal layout, clear typography, adaptable for LinkedIn, Instagram, or Facebook</pre>
+  <button class="copy-btn" onclick="copyPrompt('b15')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b15')">Expand / Collapse</button>
+  <p>Great for consistent branding across social channels.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Business infographic chart AI prompt">
+  <h3>Business Infographic Chart</h3>
+  <pre id="b16">Visual infographic chart for business analytics, modern color palette, clean layout, data-focused illustration, professional design</pre>
+  <button class="copy-btn" onclick="copyPrompt('b16')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b16')">Expand / Collapse</button>
+  <p>Perfect for presentations or reports.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Professional business card AI prompt">
+  <h3>Professional Business Card</h3>
+  <pre id="b17">Clean and professional business card design, modern layout, typography focused, brand colors, double-sided, digital mockup ready</pre>
+  <button class="copy-btn" onclick="copyPrompt('b17')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b17')">Expand / Collapse</button>
+  <p>Great for networking and corporate branding.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Corporate poster design AI prompt">
+  <h3>Corporate Poster Design</h3>
+  <pre id="b18">Modern corporate poster, minimal design, clean typography, brand aligned, visually appealing layout, suitable for office or event decoration</pre>
+  <button class="copy-btn" onclick="copyPrompt('b18')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b18')">Expand / Collapse</button>
+  <p>Perfect for office walls, events, and marketing displays.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Product showcase AI prompt">
+  <h3>Product Showcase Visual</h3>
+  <pre id="b19">High-quality product showcase image, modern lighting, clean background, professional photography style, attention to details, ideal for e-commerce, catalogs, or social media</pre>
+  <button class="copy-btn" onclick="copyPrompt('b19')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b19')">Expand / Collapse</button>
+  <p>Perfect for presenting products professionally.</p>
+</div>
+
+<div class="prompt-card">
+  <img src="https://via.placeholder.com/600x400" alt="Corporate infographic AI prompt">
+  <h3>Corporate Infographic</h3>
+  <pre id="b20">Clean corporate infographic, professional charts and icons, modern typography, data visualization, brand aligned colors, suitable for presentations and reports</pre>
+  <button class="copy-btn" onclick="copyPrompt('b20')">Copy Prompt</button>
+  <button class="toggle-btn" onclick="togglePrompt('b20')">Expand / Collapse</button>
+  <p>Great for professional business storytelling and presentations.</p>
+</div>
+<!-- END PROMPTS -->
+
+</section>
+</main>
+
+<footer>
+  <a href="privacy.html" style="color:#000;">Privacy Policy</a>
+  <p>&copy; 2025 AI Prompts. All Rights Reserved.</p>
+</footer>
+
+<script>
+function copyPrompt(id){
+  const promptText = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(promptText)
+    .then(()=>{alert('Prompt copied!');});
+}
+
+function togglePrompt(id){
+  const pre = document.getElementById(id);
+  if(pre.style.maxHeight && pre.style.maxHeight != "none"){
+    pre.style.maxHeight = "400px";
+  } else {
+    pre.style.maxHeight = "none";
+  }
+}
+</script>
+
+</body>
+</html>

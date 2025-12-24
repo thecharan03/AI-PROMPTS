@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ghibli AI Prompts - Copy real Studio Ghibli style AI prompts to create stunning animations and landscapes.">
+<title>Ghibli Prompts - AI Prompts</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:#f9f9f9;color:#333;}
+a{text-decoration:none;color:#333;}
+header{background:#fff;padding:20px 0;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+nav{width:90%;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+nav h1{font-size:24px;font-weight:bold;}
+nav ul{list-style:none;display:flex;gap:20px;}
+nav ul li{position:relative;}
+nav ul li ul.dropdown{display:none;position:absolute;top:100%;left:0;background:#fff;padding:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+nav ul li:hover ul.dropdown{display:block;}
+nav ul li ul.dropdown li{padding:5px 20px;}
+nav ul li ul.dropdown li a:hover{color:#0077ff;}
+main{width:90%;max-width:1200px;margin:40px auto;}
+section{margin-bottom:60px;}
+section h1{font-size:32px;margin-bottom:10px;}
+section h2{font-size:22px;margin-bottom:15px;color:#0077ff;}
+.prompt-card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.05);margin-bottom:20px;}
+.prompt-card img{width:100%;border-radius:10px;margin-bottom:10px;}
+.prompt-card h3{margin-bottom:10px;font-size:20px;}
+.prompt-card pre{
+  background:#f5f7fa;
+  padding:15px;
+  border-radius:8px;
+  font-size:16px;
+  line-height:1.6;
+  white-space:pre-wrap;
+  word-wrap:break-word;
+  overflow-x:auto;
+  max-height:400px;
+}
+.prompt-card p{margin-top:10px;}
+.copy-btn, .toggle-btn{
+  margin-top:5px;padding:5px 10px;background:#0077ff;color:#fff;border:none;border-radius:5px;cursor:pointer;
+}
+.copy-btn:hover, .toggle-btn:hover{background:#005ccc;}
+footer{background:#fff;padding:20px 0;text-align:center;box-shadow:0 -2px 5px rgba(0,0,0,0.1);}
+@media(max-width:768px){nav ul{flex-direction:column;gap:10px;}}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<h1>AI Prompts</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li>
+  <a href="#">Categories ▼</a>
+  <ul class="dropdown">
+    <li><a href="trending.html">Trending</a></li>
+    <li><a href="business.html">Business</a></li>
+    <li><a href="traditional.html">Traditional</a></li>
+    <li><a href="portrait.html">Portraits</a></li>
+    <li><a href="ghibli.html">Ghibli</a></li>
+  </ul>
+</li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section id="ghibli">
+<h1>Ghibli-Style AI Prompts</h1>
+<h2>Magical Studio Ghibli Inspired Images</h2>
+<p>
+These Ghibli-style AI prompts are perfect for generating magical landscapes, whimsical characters, and dreamy animated scenes inspired by Studio Ghibli films.
+</p>
+
+<!-- 20 GHIBLI PROMPTS START -->
+
+<div class="prompt-card">
+<img src="https://via.placeholder.com/600x400" alt="Ghibli Forest Scene">
+<h3>Ghibli Forest Scene</h3>
+<pre id="ghibli1">Lush enchanted forest with magical glowing plants, whimsical pathways, soft cinematic lighting, Studio Ghibli style, highly detailed, fantasy atmosphere</pre>
+<button class="copy-btn" onclick="copyPrompt('ghibli1')">Copy Prompt</button>
+<button class="toggle-btn" onclick="togglePrompt('ghibli1')">Expand / Collapse</button>
+<p>Generates magical and whimsical forest scenes in Ghibli style.</p>
+</div>
+
+<div class="prompt-card">
+<img src="https://via.placeholder.com/600x400" alt="Flying Airship Village">
+<h3>Flying Airship Village</h3>
+<pre id="ghibli2">Fantasy village with floating airships above, colorful rooftops, animated cinematic lighting, whimsical Ghibli style, dreamy sky, high detail</pre>
+<button class="copy-btn" onclick="copyPrompt('ghibli2')">Copy Prompt</button>
+<button class="toggle-btn" onclick="togglePrompt('ghibli2')">Expand / Collapse</button>
+<p>Generates floating villages and airship scenes, magical Ghibli-inspired look.</p>
+</div>
+
+<div class="prompt-card">
+<img src="https://via.placeholder.com/600x400" alt="Ghibli Village Street">
+<h3>Ghibli Village Street</h3>
+<pre id="ghibli3">Cozy Ghibli-style village street, cobblestone path, charming cottages, soft warm lighting, detailed textures, whimsical animated atmosphere</pre>
+<button class="copy-btn" onclick="copyPrompt('ghibli3')">Copy Prompt</button>
+<button class="toggle-btn" onclick="togglePrompt('ghibli3')">Expand / Collapse</button>
+<p>Generates charming village streets, perfect for animated Ghibli visuals.</p>
+</div>
+
+<div class="prompt-card">
+<img src="https://via.placeholder.com/600x400" alt="Ghibli Magical Creature">
+<h3>Ghibli Magical Creature</h3>
+<pre id="ghibli4">Cute whimsical forest creature, fluffy, big expressive eyes, magical atmosphere, soft pastel colors, Studio Ghibli art style</pre>
+<button class="copy-btn" onclick="copyPrompt('ghibli4')">Copy Prompt</button>
+<button class="toggle-btn" onclick="togglePrompt('ghibli4')">Expand / Collapse</button>
+<p>Generates magical Ghibli-style creatures with adorable features.</p>
+</div>
+
+<div class="prompt-card">
+<img src="https://via.placeholder.com/600x400" alt="Ghibli Sky Island">
+<h3>Ghibli Sky Island</h3>
+<pre id="ghibli5">Floating sky island with waterfalls, lush greenery, whimsical architecture, cinematic lighting, dreamy Studio Ghibli style, ultra-detailed</pre>
+<button class="copy-btn" onclick="copyPrompt('ghibli5')">Copy Prompt</button>
+<button class="toggle-btn" onclick="togglePrompt('ghibli5')">Expand / Collapse</button>
+<p>Generates floating magical islands in whimsical Ghibli style.</p>
+</div>
+
+<div class="prompt-card">
+<img src="https://via.placeholder.com/600x400" alt="Ghibli Magical Town">
+<h3>Ghibli Magical Town</h3>
+<pre id="ghibli6">Colorful town square, lively whimsical characters, warm sunlight, animated Ghibli style, fantasy elements, cozy atmosphere</pre>
+<button class="copy-btn" onclick="copyPrompt('ghibli6')">Copy Prompt</button>
+<button class="toggle-btn" onclick="togglePrompt('ghibli6')">Expand / Collapse</button>
+<p>Generates lively magical towns inspired by Studio Ghibli.</p>
+</div>
+
+<div class="prompt-card">
+<img src="https://via.placeholder.com/600x400" alt="Ghibli Magical Library">
+<h3>Ghibli Magical Library</h3>
+<pre id="ghibli7">Whimsical library with floating books, warm light beams, cozy atmosphere, Ghibli-inspired animated style, soft textures, high detail</pre>
+<button class="copy-btn" onclick="copyPrompt('ghibli7')">Copy Prompt</button>
+<button class="toggle-btn" onclick="togglePrompt('ghibli7')">Expand / Collapse</button>
+<p>Generates magical animated libraries with whimsical charm.</p>
+</div>
+
+<div class="prompt-card">
+<img src="https://via.placeholder.com/600x400" alt="Ghibli Floating Lighthouse">
+<h3>Ghibli Floating Lighthouse</h3>
+<pre id="ghibli8">Mystical lighthouse floating above clouds, warm sunset lighting, whimsical details, Studio Ghibli style, fantasy atmosphere</pre>
+<button class="copy-btn" onclick="copyPrompt('ghibli8')">Copy Prompt</button>
+<button class="toggle-btn" onclick="togglePrompt('ghibli8')">Expand / Collapse</button>
+<p>Generates floating lighthouses in dreamy Ghibli style.</p>
+</div>
+
+<div class="prompt-card">
+<img src="https://via.placeholder.com/600x400" alt="Ghibli Cozy Cafe">
+<h3>Ghibli Cozy Cafe</h3>
+<pre id="ghibli9">Charming cozy cafe on a village street, warm lights, whimsical Ghibli atmosphere, animated style, detailed textures, dreamy environment</pre>
+<button class="copy-btn" onclick="copyPrompt('ghibli9')">Copy Prompt</button>
+<button class="toggle-btn" onclick="togglePrompt('ghibli9')">Expand / Collapse</button>
+<p>Generates cozy magical cafes in Ghibli animation style.</p>
+</div>
+
+<div class="prompt-card">
+<img src="https://via.placeholder.com/600x400" alt="Ghibli Ocean Sunset">
+<h3>Ghibli Ocean Sunset</h3>
+<pre id="ghibli10">Ghibli-style ocean at sunset, glowing waves, dreamy colors, whimsical atmosphere, soft cinematic lighting, ultra-detailed</pre>
+<button class="copy-btn" onclick="copyPrompt('ghibli10')">Copy Prompt</button>
+<button class="toggle-btn" onclick="togglePrompt('ghibli10')">Expand / Collapse</button>
+<p>Generates magical oceans and sunsets in Ghibli style.</p>
+</div>
+
+<!-- Repeat similar cards for ghibli11 - ghibli20 -->
+<!-- You can change images and prompts to your unique Ghibli-inspired ideas -->
+
+</section>
+</main>
+
+<footer>
+<a href="privacy.html" style="color:#000;">Privacy Policy</a>
+<p>&copy; 2025 AI Prompts. All Rights Reserved.</p>
+</footer>
+
+<script>
+function copyPrompt(id){
+  const promptText = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(promptText).then(()=>{alert('Prompt copied!');});
+}
+
+function togglePrompt(id){
+  const pre = document.getElementById(id);
+  if(pre.style.maxHeight && pre.style.maxHeight != "none"){
+    pre.style.maxHeight = "400px";
+  } else {
+    pre.style.maxHeight = "none";
+  }
+}
+</script>
+
+</body>
+</html>
