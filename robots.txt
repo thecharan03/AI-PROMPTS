@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thecharan03.github.io/AI-PROMPTS/sitemap.xml
+Sitemap: https://thecharan03.github.io/sitemap.xml
